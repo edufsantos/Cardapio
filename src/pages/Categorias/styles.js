@@ -259,7 +259,7 @@ export const Cont = styled.div`
   }
   .prices span{
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 500; 
     font-stretch: normal;
     font-style: normal;
     line-height: 1.33;
@@ -267,6 +267,7 @@ export const Cont = styled.div`
     text-align: center;
     color: #575757;
     flex-grow: 1;
+    
   }
   .prices{
     display: flex;
