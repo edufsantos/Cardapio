@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import imgBg from '../../assets/bg.jpg';
+import imgBg from '../../assets/bg-capa.jpg';
 import imgBg2 from '../../assets/bg2.jpg';
 
 
@@ -43,7 +43,7 @@ export const Container = styled.div`
   font-family: 'Roboto', sans-serif;
 
   section.apresentation{
-    padding: 60px 0 0;
+    padding: 30px 0 0;
     display: flex;
     flex-direction: column;
     font-weight: bold;
@@ -54,7 +54,6 @@ export const Container = styled.div`
   }
   section.apresentation h1{
     line-height: 1.3em;
-  
     font-size: 36px;
 
   }
@@ -70,7 +69,7 @@ export const Container = styled.div`
   }
 
   .list-cat{
-    padding: 60px 0;
+    padding: 20px 0 15px;
     width: 100%
   }
   .list-cat ul li{
@@ -81,13 +80,10 @@ export const Container = styled.div`
       box-shadow: 0 2px 4px 0 hsla(0,0%,87.5%,.5);
       border: 1px solid rgba(0,0,0,.1);
       background-color: #fff;
-      margin-bottom: 16px;
+      margin-bottom: 10px;
       padding: 8px 16px 8px 24px;
       color: black;
       cursor: pointer;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
       user-select: none;
       line-height: 1.15;
       display: flex;
@@ -96,7 +92,7 @@ export const Container = styled.div`
   .list-cat ul li p{
       margin-left: 15px
   }
-  
+     
   @media (max-width: 600px){
     padding: 0 5%;
 
@@ -106,12 +102,36 @@ export const Container = styled.div`
     
   }
 `;
+export const Logos = styled.div`
+	background-color: #f8f8f8;
+	width: 100%;
+  
+  img{
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    max-width:150px;
+  }
+
+  @media (max-width: 600px){
+    padding: 15px 0 30px;
+		max-height: 50px;
+		display: flex;
+		justify-content: center;
+    align-items: center;
+    
+    img{
+      position: unset;
+		  margin: 0 auto;
+    }
+  }
+`;
 export const ContainerModal = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
     background: #F8F8F8;
-    width: calc(100vw - 32px);
+    width: calc(100vw - 30px);
     font-family: 'Roboto', sans-serif;
-    padding: 60px 16px 0;
+    padding: 15px 15px 0;
     
   ul.modal-ul {
     max-width: 900px;
@@ -120,9 +140,11 @@ export const ContainerModal = styled.div`
   }
   ul.modal-ul li .item{
     padding: 30px 15px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     background: #fff;
     display: flex;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 1px 10px 0 rgba(0,0,0,.12), 0 4px 5px 0 rgba(0,0,0,.14);
     justify-content: space-between
   }
   ul.modal-ul li .item .item-texts{
@@ -161,6 +183,11 @@ export const ContainerModal = styled.div`
     cursor: pointer;
     flex-grow: 0;
   }
+  ul.modal-ul li .item .item-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   ul.modal-ul li .item .item-image .price {
     display: flex;
     flex-direction: column;
@@ -196,13 +223,13 @@ export const ContainerModal = styled.div`
 `
 export const Cont = styled.div`
   font-family: 'Roboto', sans-serif;
-  width: calc(100% - 60px);
-  padding: 30px 30px 60px;
+  width: calc(100% - 30px);
+  padding: 15px 15px 60px;
 
   
   .cont-close{
     width: 100%;
-    padding: 0 0 15px;
+    padding: 0;
     display: flex; 
     justify-content: flex-end;
   }
